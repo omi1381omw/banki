@@ -4,11 +4,14 @@ namespace Bank\Parent;
 
 class BankAccount
 {
+    protected static $totalAccount = 0;
+
     public function __construct(
         protected int $accountNumber,
         protected int $balance,
         protected string $registerDate
     ) {
+        self::$totalAccount++;
     }
 
     public function getAccountNumber()
@@ -59,6 +62,11 @@ class BankAccount
         $this->balance -= $value;
 
         return $this;
+    }
+
+    public static function totalAccount()
+    {
+        return self::$totalAccount;
     }
 
     public function info(): string

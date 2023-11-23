@@ -23,3 +23,5 @@ echo "</br>";
 
 $loanAccount = new LoanAccount(45, 35, '2023-10-23 10:43:22', 1);
 echo $loanAccount->info();
+
+echo 'the total accounts is: ' . BankAccount::totalAccount();
