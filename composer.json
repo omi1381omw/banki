@@ -1,0 +1,9 @@
+{
+    "name": "omid/bank",
+    "autoload": {
+        "psr-4": {
+            "Bank\\": "src/"
+        }
+    },
+    "require": {}
+}
