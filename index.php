@@ -1,15 +1,15 @@
 <?php
 
-ini_set('display_errors', 1);
-
 require 'vendor/autoload.php';
 
+use Banki\Models\BankAccount;
+use Banki\Models\Customer;
+use Banki\Models\LoanAccount;
+use Banki\Models\SavingAccount;
+use Banki\Models\TransactionAccount;
 
-use Banki\Childs\LoanAccount;
-use Banki\Childs\SavingAccount;
-use Banki\Childs\TransactionAccount;
-use Banki\Childs\CustomerAccount;
-use Banki\Parent\BankAccount;
+ini_set('display_errors', 1);
+
 
 $bankAccount = new BankAccount(800, 200, '2023-11-23 10:43:22');
 echo $bankAccount->info();
@@ -27,7 +27,7 @@ $loanAccount = new LoanAccount(45, 35, '2023-10-23 10:43:22', 1);
 echo $loanAccount->info();
 echo "</br>";
 
-$customerAccount = new CustomerAccount(8, 10, '2023-10-23 10:43:50', 'omid', 'mahmoodi', 21, 375, 12);
+$customerAccount = new Customer('omid mahmoodi', 3762372251, 9362919101);
 echo $customerAccount->info();
 echo "</br>";
 
