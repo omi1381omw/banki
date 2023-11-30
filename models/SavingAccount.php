@@ -1,8 +1,6 @@
 <?php
 
-namespace Banki\Childs;
-
-use Banki\Parent\BankAccount;
+namespace Banki\Models;
 
 class SavingAccount extends BankAccount
 {
