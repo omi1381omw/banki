@@ -1,6 +1,6 @@
 <?php
 
-namespace Banki\Parent;
+namespace Banki\Models;
 
 class BankAccount
 {
