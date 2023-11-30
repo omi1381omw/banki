@@ -1,8 +1,8 @@
 <?php
 
-namespace Bank\Childs;
+namespace Banki\Childs;
 
-use Bank\Parent\BankAccount;
+use Banki\Parent\BankAccount;
 
 class LoanAccount extends BankAccount
 {
